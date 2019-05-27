@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<title>Yuwei</title>
+<meta charset="utf-8">
+<link href="histogram.css " rel="stylesheet" type="text/css" />	
+</head>
+<body>
+
+<h1>Histogram Generator</h1>
+<div id="table1">
+  <h2>Lower bounds </h2>
+  <table>
+    <col width="100" height="50">
+    <col width="70">
+    <tr>
+     <td >Max</td>
+     <td><form><input type="number" id="MAX" min="0" max="100" value="100.00" ></form></td>
+   </tr>
+   <tr>
+    <td>A+</td>
+    <td><form><input type="number" id="AP" min="0" max="100" value="95.00" ></form></td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td><form><input type="number" id="A" min="0" max="100" value="90.00" ></form></td>
+  </tr>
+  <tr>
+    <td>A-</td>
+    <td><form><input type="number" id="AM" min="0" max="100" value="85.00"  ></form></td>
+  </tr>
+  <tr>
+    <td>B+</td>
+   <td><form><input type="number" id="BP" min="0" max="100" value="80.00"  ></form></td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td><form><input type="number" id="B" min="0" max="100" value="75.00" ></form></td>
+  </tr>
+  <tr>
+    <td>B-</td>
+    <td><form><input type="number" id="BM" min="0" max="100" value="70.00"  ></form></td>
+  </tr>
+  <tr>
+    <td>C+</td>
+    <td><form><input type="number" id="CP" min="0" max="100" value="65.00" ></form></td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td><form><input type="number" id="C" min="0" max="100" value="60.00"  ></form></td>
+  </tr>
+  <tr>
+    <td>C-</td>
+    <td><form><input type="number" id="CM" min="0" max="100" value="55.00" ></form></td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td><form><input type="number" id="D" min="0" max="100" value="50.00"  ></form></td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td><form><input type="number" id="F" min="0" max="100" value="0.00"  ></form></td>
+  </tr>
+</table>
+</div>
+<p id="warning"></p>
+
+<div id="table2">
+  <h3>Histogram</h3>
+  <table>
+    <col width="70">
+    <col width="100">
+    <tr>
+      <td>A+</td>
+      <td id="APP">O</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td id="AA">OOO</td>
+    </tr>
+    <tr>
+      <td>A-</td>
+      <td id="AMM">OOO</td>
+    </tr>
+    <tr>
+      <td>B+</td>
+      <td id="BPP">OO</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td id="BB">O</td>
+    </tr>
+    <tr>
+      <td>B-</td>
+      <td id="BMM">OOOO</td>
+    </tr>
+    <tr>
+      <td>C+</td>
+      <td id="CPP">O</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td id="CC">OO</td>
+    </tr>
+    <tr>
+      <td>C-</td>
+      <td id="CMM">OO</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td id="DD">OOO</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td id="FF">OO</td>
+    </tr>
+    <tr>
+      <td id="warning" colspan="2"></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+<script type="text/javascript" src="calculate.js "></script>
+<button type="button" onclick="testFunction()">Calculate!</button>
+
+</html>
